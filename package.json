@@ -1,11 +1,16 @@
 {
   "name": "my-json-server",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/json-server/bin/index.js db.json --port $PORT"
+    "start": "json-server --watch db.json --port $PORT",
+    "heroku-postbuild": "npm install json-server"
   },
   "dependencies": {
-    "json-server": "^1.0.0"
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18"
   }
 }
