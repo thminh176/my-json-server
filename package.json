@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "npm install json-server && json-server db.json --port $PORT"
+    "start": "node ./node_modules/json-server/bin/index.js db.json --port $PORT"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "json-server": "^1.0.0"
+  }
 }

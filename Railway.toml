@@ -1,0 +1,7 @@
+# Railway.toml
+
+[build]
+  command = "npm install"
+
+[deploy]
+  command = "npm start"
